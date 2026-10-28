@@ -1,6 +1,8 @@
 import numpy as np
 import time
 from scipy.linalg import lu_factor, lu_solve
+from bs import S0, K, T, r, sigma, bs_analytic   # paramètres + référence analytique
+
 
 # Paramètres numériques
 N_S = 200
