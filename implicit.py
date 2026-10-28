@@ -1,4 +1,3 @@
-```python
 import numpy as np
 import time
 from scipy.linalg import lu_factor, lu_solve
@@ -6,7 +5,7 @@ from scipy.linalg import lu_factor, lu_solve
 # Paramètres numériques
 N_S = 200
 S_max = 3 * K
-N_t = 10000
+N_t = 1000
 
 dS = S_max / N_S
 dt = T / N_t
