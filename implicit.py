@@ -67,4 +67,4 @@ prix_implicite = np.interp(S0, S_grid, U)
 
 print("Prix du call par le schéma implicite :", prix_implicite)
 print("Temps de calcul :", temps_calcul, "secondes")
-```
+
