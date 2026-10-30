@@ -8,7 +8,6 @@ from bs import S0, K, T, r, sigma, bs_analytic   # paramètres + référence ana
 N_S = 200
 S_max = 3 * K
 N_t = 10000
-# T doit etre déclarée dans la partie bs.py 
 
 dS = S_max / N_S
 dt = T / N_t
