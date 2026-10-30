@@ -1,0 +1,37 @@
+Prix exact du call : 10.450584
+
+== 3.1 Validation : (N, M) -> erreur absolue (explicite, implicite, CN)
+N=  50 M=  2000  6.36e-02  6.26e-02  6.31e-02
+N= 100 M=  2000  1.56e-02  1.46e-02  1.51e-02
+N= 200 M=  2000  4.37e-03  3.32e-03  3.85e-03
+N= 400 M=  8000  1.08e-03  8.22e-04  9.53e-04
+N= 800 M= 32000  2.72e-04  2.07e-04  2.39e-04
+
+== 3.2 Ordre en temps (N=400, référence = même schéma, M très fin)
+imp M=  10 err=1.041e-01 ordre=
+imp M=  20 err=5.220e-02 ordre=1.0
+imp M=  40 err=2.610e-02 ordre=1.0
+imp M=  80 err=1.302e-02 ordre=1.0
+imp M= 160 err=6.471e-03 ordre=1.01
+imp M= 320 err=3.195e-03 ordre=1.02
+cn  M=  10 err=7.216e-02 ordre=
+cn  M=  20 err=9.378e-03 ordre=2.94
+cn  M=  40 err=5.731e-05 ordre=7.35
+cn  M=  80 err=3.875e-05 ordre=0.56
+cn  M= 160 err=9.684e-06 ordre=2.0
+cn  M= 320 err=2.416e-06 ordre=2.0
+
+== 3.3 Stabilité de l'explicite (N=200) : erreur max sur la grille
+CFL théorique : M >= 1600
+M= 1100  erreur max = 3.63e+248
+M= 1400  erreur max = 5.80e+66
+M= 1450  erreur max = 1.56e+27
+M= 1500  erreur max = 1.31e-03
+M= 1600  erreur max = 1.34e-03
+M= 2000  erreur max = 1.43e-03
+
+== 3.4 Put américain (CN + PSOR) vs arbre CRR
+CRR américain = 6.09018
+N=100 M=100 prix=6.0997 err=9.49e-03 it.GS/pas=15.0 S*(0)=81.0
+N=200 M=200 prix=6.0925 err=2.36e-03 it.GS/pas=13.2 S*(0)=81.0
+N=400 M=400 prix=6.0909 err=7.04e-04 it.GS/pas=13.1 S*(0)=81.0
